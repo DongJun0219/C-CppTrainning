@@ -8,7 +8,7 @@ int main(){
 	for(i=2; i<=n; i++){ //소인수분해 코드 시작   
 		tmp=i;
 		j=2;
-		while(1){  
+		while(1){
 			if(tmp%j==0){ 
 				tmp=tmp/j;
 				ch[j]++;
