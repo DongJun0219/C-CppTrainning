@@ -1,14 +1,12 @@
-#include <stdio.h>
-int main(){
-	int n, i, tmp, cnt=0;
+#include<stdio.h>
+	int main(){
+	int n, i, j;
 	scanf("%d", &n);
-	for(i=3; i<=n; i++){
-		tmp=i;
-		while(tmp>0){
-			if(tmp%10==3) cnt++;
-			tmp=tmp/10;
-		}
+	for(i=n; i>=1; i--){
+	for(j=1; j<=i; j++){
+	printf("@");
 	}
-	printf("%d", cnt);
+	printf("\n");
+	}
 	return 0;
-}
+	}
